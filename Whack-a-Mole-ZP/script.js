@@ -3,5 +3,5 @@ function pointsClear(id){
     element = 0;
 }
 function pointsUp(element){
-
+    let element = document.querySelector(`#${id}`)
 }
