@@ -11,18 +11,18 @@
 <body>
     <div class="nav-bar"><!--this will display the points when someone clicks a mole-->
         <h1>Points:<span id="pointsCount">0</span></h1>
-        <button onclick="pointsClear('pointsCount')">Reset Score?</button>
-    </div>
+        <button onclick="pointsClear('pointsCount')">Reset Score?</button><!--this will reset any points gained by clicking moles-->
+    </div><!--div end for "nav-bar"-->
     <div class="container">
-        <div class="mole">
-            <img class="moleImg1" src="./images/mole asset.jpg" alt="cute mole pic" onclick="pointsUp('pointsCount'),hideMole('moleImg1')">
+        <div class="mole"><!--creates an image that when clicked will increment points by 1-->
+            <img id="moleImg1" src="./images/mole asset.jpg" alt="cute mole pic" onclick="pointsUp('pointsCount'),setTimeout(hideMole,1000,'moleImg1')">
         </div>
         <div class="mole">
-            <img class="moleImg2" src="./images/mole asset.jpg" alt="cute mole pic" onclick="pointsUp('pointsCount'),hideMole('moleImg2')">
+            <img id="moleImg2" src="./images/mole asset.jpg" alt="cute mole pic" onclick="pointsUp('pointsCount'),setTimeout(hideMole,1000,'moleImg2')">
         </div>
         <div class="mole">
-            <img class="moleImg3" src="./images/mole asset.jpg" alt="cute mole pic" onclick="pointsUp('pointsCount'),hideMole('moleImg3')">
+            <img id="moleImg3" src="./images/mole asset.jpg" alt="cute mole pic" onclick="pointsUp('pointsCount'),setTimeout(hideMole,1000,'moleImg3')">
         </div>
-    </div>
+    </div><!--div end for "container"-->
     </body>
 </html>
