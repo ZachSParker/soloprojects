@@ -14,12 +14,11 @@
     column-gap:25%;
 }
 h1{
-    color:beige;
-    background-color: black;
+    background-color: rgb(20, 50, 24);
 }
 .nav-bar button{
     background-color:darkgoldenrod;
 }
 img{
-    width:30%;
+    width:25%;
 }
