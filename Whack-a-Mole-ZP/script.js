@@ -10,9 +10,8 @@ function pointsUp(id){
     element.innerText++;
 }
 //this function hides the mole and then waits for 300ms before calling the moleAppear() function.
-function hideMole(element){
-    console.log(element);
-    // let element = document.querySelector(`#${id}`)
+function hideMole(id){
+    let element = document.querySelector(`#${id}`)
     element.style.display ="none";
 }
 function moleAppear(id){
