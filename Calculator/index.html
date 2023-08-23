@@ -8,6 +8,35 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-
+    <div id="calculator">
+        <div id="display">0</div>
+        <div class="row">
+            <button class="numBtn" onclick="press(7);">7</button>
+            <button class="numBtn" onclick="press(8);">8</button>
+            <button class="numBtn" onclick="press(9);">9</button>
+            <button class="operator" onclick="setOP('/');">÷</button>
+        </div>
+        <div class="row">
+            <button class="numBtn" onclick="press(4);">4</button>
+            <button class="numBtn" onclick="press(5);">5</button>
+            <button class="numBtn" onclick="press(6);">6</button>
+            <button class="operator" onclick="setOP('*');">x</button>
+        </div>
+        <div class="row">
+            <button class="numBtn" onclick="press(1);">1</button>
+            <button class="numBtn" onclick="press(2);">2</button>
+            <button class="numBtn" onclick="press(3);">3</button>
+            <button class="operator" onclick="setOP('-');">-</button>
+        </div>
+        <div class="row">
+            <button class="numBtn" onclick="clr();">C</button>
+            <button class="numBtn" onclick="press(0);">0</button>
+            <button class="numBtn" onclick="press('.');">.</button>
+            <button class="operator" onclick="setOP('+');">+</button>
+        </div>
+        <div class="row">
+            <button id="equals" onclick="calculate()">=</div>
+        </div>
+    <div>
 </body>
 </html>
