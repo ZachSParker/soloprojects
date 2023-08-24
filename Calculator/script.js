@@ -1,5 +1,5 @@
-let num1 = "";
-let num2 = "";
+let num1 = 0;
+let num2 = 0;
 let operator = "";
 function setOP(element)
 {   
@@ -29,17 +29,29 @@ function press(element)
 }
 function calculate()
 {
-    sum = 0;
-    if(operator=="x"){
+    console.log(typeof(num1));
+    console.log(typeof(num2));
+    calcDisplay = document.querySelector('#display');
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+    var sum = 0;
+    if(operator=="*"){
         sum = num1 * num2;
     }
     else if(operator == "/"){
         sum = num2 / num1;
     }
     else if(operator == "+"){
-        sum = num2 += num1;
+        
+        sum = num1 + num2;
+        
+    }
+    else if(operator == "-"){
+        sum = num2 - num1;
     }
     calcDisplay.innerText = sum;
+    num1 = calcDisplay.innerText;
+    return sum;
 }
 function clr()
 {
