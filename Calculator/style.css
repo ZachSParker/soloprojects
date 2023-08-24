@@ -6,6 +6,7 @@
     background-color: black;
     display:flex;
     flex-direction: column;
+    border: double 7px orange;
     width:20%;
     height:345px;
     padding:16px;
